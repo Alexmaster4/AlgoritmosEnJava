@@ -14,13 +14,31 @@ mostrar
 
 public class productToNumber {   
 
-   public static void main(String[] args) {
-   		int resultado = 0;
-   		System.out.println(args[0]);
-
-
-   		System.out.println("el producto es: "+resultado);
-      
+      int resultado=0;
+        int x = 0;
+       for (int i=x; i>0; i--){
+          int y=i;
+          if(i==x){
+              resultado=i;
+              
+          }   
+          else { 
+          resultado= resultado*y;
+  
+          } if (i>1){
+           System.out.print(""+i+"x");
+         
+               }
+          else {
+              System.out.println(""+1+" =");
+          }
+           
+           
+           
+           
+       }
+           
+           System.out.println("el producto es"+ " " +resultado);
+        
+    }
    }
-
-}

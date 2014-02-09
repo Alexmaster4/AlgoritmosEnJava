@@ -9,13 +9,26 @@ Dados 2 numeros (limite inferior y superior), recorra el rango e imprima los num
 
 public class rangeSum {   
 
-   public static void main(String[] args) {
+       public static void main(String[] args){
+        int x=0;
+        int y=0;
+      x= Integer.parseInt(args[0].toString());
+      y= Integer.parseInt(args[1].toString());
 
-		System.out.println("limites: "+args[0]+" "+args[1]);
-
-      
-         System.out.println("numero actual es:" );
-      
-   }
-
+    if (x<y){
+    for(int i = x; i<=y;i++){
+        int z=i;
+        System.out.print(""+z+","+" ");
+        
+    }
+    }
+    else if (y<x){
+        for(int i = y; i<=x;i++){
+        int z=i;
+        System.out.print(""+z+","+" ");
+    }
+    
+    }
+    
+}
 }
